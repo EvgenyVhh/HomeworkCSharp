@@ -34,7 +34,7 @@ Console.WriteLine("Max number is " + maximal);
 
 //задача Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
 
-
+/*
 Console.Write("Input a number:");
 int n1 = Convert.ToInt32(Console.ReadLine());
 
@@ -47,11 +47,133 @@ else{
     Console.WriteLine("Введенное число не чётное");
 }
 
+*/
+
+//Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+
+
+/*
+  Console.Write("Input a number:");
+int n = Convert.ToInt32(Console.ReadLine());
+int current = 1;
+
+if(n >= 1)
+{
+    current = n;
+    
+}
+while(current <= n)
+{
+    Console.Write(current + " ");
+    current++;
+}
+
+*/
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Напишите программу, которая принимает двузначное число и показывает наибольшую цифру числа.
+//снизу  метод
+/*
+int FindBiggerDigit(int num)
+{
+    int result;
+
+    if(num < 10 || num >= 100)
+        return 0;
+    else
+    {
+        int ed = num % 10;
+        int dec = num /10;
+
+        if(ed > dec)
+        
+            result = ed;
+            else
+            
+                result = dec;
+            
+        
+    }
+    return result;
+}
+
+Console.Write("Input a two-digit number:");
+int number = Convert.ToInt32(Console.ReadLine());
+
+FindBiggerDigit(number);
+int biggerDigit = FindBiggerDigit(number);
+Console.WriteLine($"Bigger digit of {number} is {biggerDigit}");
+*/
+
+
+//Напишите программу, которая выводит случайное трёхзначное число и удаляет вторую цифру этого числа.
+/*
+int numberEx = new Random().Next(99, 1000);
+Console.WriteLine(numberEx);
+int RandomThirdNumber(int num) {
+  int oneNumber = num / 100;
+  int thirdNumber = num % 10;
+  return oneNumber *10 + thirdNumber;
+}
+Console.WriteLine(RandomThirdNumber(numberEx));
+
+
+
+*/
+
+
+
+
+
+//2 Напишите программу, которая принимает на вход число n и проверяет, кратно ли оно одновременно a и b(целочисленные делители, также задаются пользователем).
+
+/*
+
+int krat(int x, int y, int z)
+{
+    if(x % y == 0 && x % z == 0)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+Console.WriteLine("Введите N");
+int n =  Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите 1 делитель");
+int number1 =  Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите 2 делитель");
+int number2 = Convert.ToInt32(Console.ReadLine());
+int del = krat(n, number1, number2);
+Console.WriteLine(del);
+
+*/
 
 
 
