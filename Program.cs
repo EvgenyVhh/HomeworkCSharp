@@ -51,31 +51,28 @@ else{
 
 //Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 
-
-/*
-  Console.Write("Input a number:");
+Console.Write("ВВедите число:");
 int n = Convert.ToInt32(Console.ReadLine());
-int current = 1;
+int max = 0;
+if (n > 0){
 
-if(n >= 1)
-{
-    current = n;
-    
+
+while(n > max)
+        {
+        max = max + 2;
+        Console.Write(max + ",");
+        
+        };
+   
 }
-while(current <= n)
-{
-    Console.Write(current + " ");
-    current++;
-}
-
-*/
-
-
-
-
-
-
-
+else {
+       while(n < max)
+        {
+        max = max - 2;
+        Console.Write(max + ",");
+        
+        };
+};
 
 
 
