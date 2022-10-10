@@ -1,69 +1,6 @@
 ﻿
 
 
-//Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
-/*
-Console.Write("Введите трехзначное число:");
-int n = Convert.ToInt32(Console.ReadLine());
-int SecondNumber(int num) {
-  int oneNumber = num / 100;
-  int thirdNumber = num % 10;
-  int tviceNumber = n - oneNumber * 100;
-  int averageNumber = tviceNumber /10;
-  return averageNumber;
-}
-Console.WriteLine(SecondNumber(n));
-*/
-
-
-
-
-//Задача 13.Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
-/*
-Console.Write("Введите число:");
-int num = Convert.ToInt32(Console.ReadLine());
-if (num<=100)
-
-    Console.Write("Третьего числа нет");
-    else{
-
-    
-int ThirdNumber(int num) {
-    int current = num;
-    while (current > 1000)
-    {
-       current = current / 10 ;       
-    };
-
-    return current % 10;
-}
-
-
-
-Console.Write("Третье число:" + ThirdNumber(num));
-
-    };
-
-*/
-
-
-
-//Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
-/*
-bool Week(int num){
-    if (num > 5 && num <=7){
-        return true;
-    }
-    return false;
-};
-
-Console.Write("Введите цифру, обозначающую день недели:");
-int num = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(Week(num));
-
-*/
-
-
 
 
 
@@ -125,7 +62,7 @@ Console.WriteLine("Distance:"+ dis);
 
 //Задача 23.Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 
-
+/*
 
 void Cube(int num)
 {
@@ -146,7 +83,7 @@ int num = Convert.ToInt32(Console.ReadLine());
 Cube(num);
 
 
-
+*/
 
 
 
@@ -170,6 +107,69 @@ Cube(num);
 
 
 //////классные работы
+//упорядочевание по возрастанию в массиве
+/*
+int[] arr = {1, 5, 4, 3, 2, 6, 7, 1, 1 };
+
+void PrintArray(int[] array)
+{
+    int count = array.Length;
+
+    for (int i = 0; i < count ; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
+
+void SelectionSort(int[] array)
+{
+    for (int i=0; i< array.Length -1 ; i++)
+    {
+        int minPosition = i;
+        for(int j = i + 1; j < array.Length; j++)
+        {
+            if(array[j] < array[minPosition]) minPosition = j;
+        }
+
+        int temporary = array[i];
+        array[i] = array[minPosition];
+        array[minPosition] = temporary;
+
+    }
+}
+
+PrintArray(arr);
+SelectionSort(arr);
+
+PrintArray(arr);
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //Напишите программу, которая принимает на вход координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, в которой находится эта точка.
@@ -506,3 +506,66 @@ else {
 };
 
 */
+//Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
+/*
+Console.Write("Введите трехзначное число:");
+int n = Convert.ToInt32(Console.ReadLine());
+int SecondNumber(int num) {
+  int oneNumber = num / 100;
+  int thirdNumber = num % 10;
+  int tviceNumber = n - oneNumber * 100;
+  int averageNumber = tviceNumber /10;
+  return averageNumber;
+}
+Console.WriteLine(SecondNumber(n));
+*/
+
+
+
+
+//Задача 13.Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+/*
+Console.Write("Введите число:");
+int num = Convert.ToInt32(Console.ReadLine());
+if (num<=100)
+
+    Console.Write("Третьего числа нет");
+    else{
+
+    
+int ThirdNumber(int num) {
+    int current = num;
+    while (current > 1000)
+    {
+       current = current / 10 ;       
+    };
+
+    return current % 10;
+}
+
+
+
+Console.Write("Третье число:" + ThirdNumber(num));
+
+    };
+
+*/
+
+
+
+//Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+/*
+bool Week(int num){
+    if (num > 5 && num <=7){
+        return true;
+    }
+    return false;
+};
+
+Console.Write("Введите цифру, обозначающую день недели:");
+int num = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(Week(num));
+
+*/
+
+
