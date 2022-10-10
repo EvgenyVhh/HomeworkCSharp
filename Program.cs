@@ -67,6 +67,103 @@ Console.WriteLine(Week(num));
 
 
 
+//Задача 19.Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+/*
+bool Polindrom(int num)
+{
+int current = num;
+    if (((current / 10000) == (current % 10)) && ((current / 1000 % 10) == (current % 100 / 10)))
+    {
+        return true;
+    }
+    return false;
+
+    
+};
+
+Console.Write("Введите пятизначное число:");
+int num = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(Polindrom(num));
+*/
+
+
+
+
+//Задача 21.Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
+
+/*
+double FindDistance(double xa, double ya, double za, double xb, double yb, double zb)
+ {
+    double ac = ((xb - xa) * (xb - xa));
+    double bc = ((yb - ya) * (yb - ya));
+    double z = ((zb - za) * (zb - za)) ;
+    double az = Math.Sqrt(ac + bc + z);
+    double resoult = Math.Round(az , 2);
+    return resoult;
+}
+
+
+Console.Write("Input xa-coordinate:");
+double xa = Convert.ToDouble(Console.ReadLine());
+Console.Write("Input ya-coordinate:");
+double ya = Convert.ToDouble(Console.ReadLine());
+Console.Write("Input za-coordinate:");
+double za = Convert.ToDouble(Console.ReadLine());
+Console.Write("Input xb-coordinate:");
+double xb = Convert.ToDouble(Console.ReadLine());
+Console.Write("Input yb-coordinate:");
+double yb = Convert.ToDouble(Console.ReadLine());
+Console.Write("Input zb-coordinate:");
+double zb = Convert.ToDouble(Console.ReadLine());
+
+double dis = FindDistance(xa, ya, za, xb, yb, zb);
+Console.WriteLine("Distance:"+ dis);
+*/
+
+
+
+
+//Задача 23.Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+
+
+
+void Cube(int num)
+{
+    int count = 1;
+    while (count <= num)
+    {
+       double n= Math.Pow(count, 3);
+        Console.Write(n + " ");
+        count++;
+    }
+
+
+}
+
+
+Console.Write("Введите число:");
+int num = Convert.ToInt32(Console.ReadLine());
+Cube(num);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
