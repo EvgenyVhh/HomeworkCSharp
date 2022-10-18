@@ -1,252 +1,4 @@
-﻿// Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
-
-
-
-// int Sqr (int num , int num2)
-// {
-//     int i = 1;
-//     int sqr = num;
-//         while (i < num2)
-//         {
-//         sqr = (sqr * num);
-        
-//         i++;
-//          }
-//     return sqr;
-// }
-
-
-// Console.Write("Введите число:");
-// int num = Convert.ToInt32(Console.ReadLine());
-// Console.Write("Введите степень:");
-// int num2 = Convert.ToInt32(Console.ReadLine());
-// int sqr = Sqr(num , num2);
-
-// Console.WriteLine(sqr);
-
-
-
-
-
-
-
-
-
-
-// Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
-
-
-
-// int SumNum (int num)
-// {
-//     int res = 0;
-//     int sum = 0;
-    
-//     while (num > 0)
-//     {
-//         sum = num % 10;
-//         res = res + sum;
-//         num = num / 10;
-//     }
-// return res;
-// }
-
-// Console.Write("Введите число:");
-// int num = Convert.ToInt32(Console.ReadLine());
-// int sum = SumNum(num);
-// Console.WriteLine(sum);
-
-
-
-
-
-
-
-
-
-// Задача 29: Напишите программу, которая задаёт массив из m элементов и выводит их на экран.
-
-
-
-
-
-// int[] CreateRandomArray(int size) 
-// {
-//   int[] array = new int[size];
-//   for (int i = 0; i < array.Length; i++)
-//     array[i] = new Random().Next(0, 1000 + 1);
-//   return array;
-// }
-// void ShowArray(int[] array) 
-// {
-//   foreach (var item in array)
-//     Console.Write(item + " ");
-//   Console.WriteLine();
-// }
-
-
-// Console.Write("Введите количество элементов(m)");
-// int size = Convert.ToInt32(Console.ReadLine());
-// int[] arr = CreateRandomArray(size);
-// ShowArray(arr);
-
-
-
-
-
-
-
-
-// Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
-
-
-
-// int[] CreateRandomArray(int size) 
-// {
-//   int[] array = new int[size];
-//   for (int i = 0; i < array.Length; i++)
-//     array[i] = new Random().Next(100, 999 + 1);
-//   return array;
-// }
-
-// int NumEven(int[] array) 
-// {
-//   int count = 0;
-//   for (int i = 0; i < array.Length; i++)
-//   {
-//     if(array[i] % 2==0) 
-//     {
-//       count++;
-//     }
-//   }
-//   return count;
-// }
-
-// void ShowArray(int[] array) 
-// {
-//   foreach (var item in array)
-//     Console.Write(item + " ");
-//   Console.WriteLine();
-// }
-
-
-
-// Console.Write("Введите количество элементов массива:");
-// int size = Convert.ToInt32(Console.ReadLine());
-// int[] array = CreateRandomArray(size);
-// ShowArray(array);
-// Console.WriteLine(NumEven(array));
-
-
-
-
-
-
-
-
-
-
-// Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
-
-
-
-
-
-// int[] CreateRandomArray(int size) 
-// {
-//   int[] array = new int[size];
-//   for (int i = 0; i < array.Length; i++)
-//     array[i] = new Random().Next(100, 999 + 1);
-//   return array;
-// }
-
-// int Sum(int[] array) 
-// {
-//   int sum = 0;
-//   for (int i = 1; i < array.Length; i = i +2)
-//   {
-//     sum = array[i] + sum;
-    
-//   }
-//   return sum;
-// }
-
-// void ShowArray(int[] array) 
-// {
-//   foreach (var item in array)
-//     Console.Write(item + " ");
-//   Console.WriteLine();
-// }
-
-
-
-// Console.Write("Введите количество элементов массива:");
-// int size = Convert.ToInt32(Console.ReadLine());
-// int[] array = CreateRandomArray(size);
-// ShowArray(array);
-// Console.WriteLine(Sum(array));
-
-
-
-
-
-// Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
-
-
-
-// int[] CreateRandomArray(int size) 
-// {
-//   int[] array = new int[size];
-//   for (int i = 0; i < array.Length; i++)
-//     array[i] = new Random().Next(0, 999 + 1);
-//   return array;
-// }
- 
-// void ShowArray(int[] array) 
-// {
-//   foreach (var item in array)
-//     Console.Write(item + " ");
-//   Console.WriteLine();
-// }
-
-// int Max (int[] array)
-// {
-// int max = 0;
-//     for (int i = 0; i < array.Length; i++)
-//     {
-        
-//         if (array[i] > max)
-//         max = array[i];
-        
-//     }
-    
-// return max;
-// }
-
-// int Min (int[] array)
-// {
-// int min = array[0];
-//     for (int i = 0; i < array.Length; i++)
-//     {
-        
-//          if (array[i] < min)
-//         min = array[i];
-       
-//     }
-    
-// return min;
-// }
-
-// Console.Write("Введите количество элементов массива:");
-// int size = Convert.ToInt32(Console.ReadLine());
-// int[] array = CreateRandomArray(size);
-// ShowArray(array);
-// Console.WriteLine("Разница = " + (Max(array) - Min(array)));
-// Console.WriteLine("minValue: " + Min(array));
-// Console.WriteLine("maxValue: " + Max(array));
-
-
-
+﻿
 
 
 
@@ -269,6 +21,188 @@
 
 
 
+
+
+
+// int[] CreateRandomArray(int size, int minVal, int maxVal) 
+// {
+//   int[] array = new int[size];
+//   for (int i = 0; i < array.Length; i++)
+//     array[i] = new Random().Next(minVal, maxVal + 1);
+//   return array;
+// }
+
+
+
+
+// int[] CreateArray(int size) 
+// {
+//   int[] array = new int[size];
+//   Console.WriteLine("Creating array: ");
+//   for (int i = 0; i < size; i++)
+//   {
+//     Console.Write($"Input a {i + 1} element of array: ");
+//     array[i] = Convert.ToInt32(Console.ReadLine());
+//   }
+//   Console.WriteLine("Complete!");
+//   return array;
+// }
+
+// void ShowArray(int[] array) 
+// {
+//   foreach (var item in array)
+//     Console.Write(item + " ");
+//   Console.WriteLine();
+// }
+
+// int[] ChengerArray(int[] array)
+// {
+//     int[] newArray = new int[array.Length];
+//     newArray[0] = array[0]+ 10;
+//     for(int i = 1; i < array.Length; i++)
+//     newArray[i] = array[i];
+//     return newArray;
+// }
+// int[] myArray = CreateRandomArray();
+
+// int[] newArray = ChengerArray(myArray);
+// ShowArray(myArray);
+
+
+
+
+
+//Напишите программу, которая перевернёт одномерный массив (последний элемент будет на первом месте, а первый - на последнем и т.д.)
+// int[] CreateRandomArray() 
+// {
+// Console.Write("Input a number of elements: ");
+// int size = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input a min possible value: ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input a max possible value: ");
+// int max = Convert.ToInt32(Console.ReadLine());
+//   int[] array = new int[size];
+//   for (int i = 0; i < array.Length; i++)
+//     array[i] = new Random().Next(min, max + 1);
+//   return array;
+// }
+
+// void ShowArray(int[] array) 
+// {
+//   foreach (var item in array)
+//     Console.Write(item + " ");
+//   Console.WriteLine();
+// }
+
+
+
+// void ChengerArray(int[] array)
+// {
+//     for(int i = 0, j = array.Length - 1 ; i < j; i++, j--)
+//     {
+//         int temp = array[i];
+//         array[i] = array[j];
+//         array[j] = temp;
+//     }
+// }
+
+// int[] myArray = CreateRandomArray();
+// ShowArray(myArray);
+// ChengerArray(myArray);
+// ShowArray(myArray);
+
+
+
+// //Напишите программу, которая принимает на вход три числа и проверяет, может ли существовать треугольник с сторонами такой длины.
+// Console.Write("Input a number1: ");
+// int num1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input a number2: ");
+// int num2 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input a number3: ");
+// int num3 = Convert.ToInt32(Console.ReadLine());
+
+// bool TreeCycle(int num1,int num2,int num3)
+// {
+//     if (num1 < (num2 + num3) && num2< (num1 + num3) && num3 < (num1 + num2))
+//         return true;
+//     else 
+//         return false;
+// }
+
+// Console.WriteLine(TreeCycle(num1,num2,num3));
+
+
+
+
+
+
+//Напишите программу, которая будет создавать копию заданного массива с помощью поэлементного копирования.
+
+// int[] CreateRandomArray() 
+// {
+// Console.Write("Input a number of elements: ");
+// int size = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input a min possible value: ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input a max possible value: ");
+// int max = Convert.ToInt32(Console.ReadLine());
+//   int[] array = new int[size];
+//   for (int i = 0; i < array.Length; i++)
+//     array[i] = new Random().Next(min, max + 1);
+//   return array;
+// }
+
+// void ShowArray(int[] array) 
+// {
+//   foreach (var item in array)
+//     Console.Write(item + " ");
+//   Console.WriteLine();
+// }
+
+// int[] ChengerArray(int[] array)
+// {
+//     int[] newArray = new int[array.Length];
+    
+//     for(int i = 0; i < array.Length; i++)
+//     newArray[i] = array[i];
+//     return newArray;
+// }
+// int[] myArray = CreateRandomArray();
+// ShowArray(myArray);
+// int[] newArray = ChengerArray(myArray);
+// ShowArray(newArray);
+
+
+
+
+//Не используя рекурсию, выведите первые N чисел Фибоначчи. Первые два числа Фибоначчи: a и b.
+//числовая последовательность по принципу каждый новый элемент = суммы двух предыдущих
+
+Console.Write("Input a N: ");
+int n = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input number a : ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input number b: ");
+int b = Convert.ToInt32(Console.ReadLine());
+
+int[] Fibonache(int size , int num1, int num2)
+{
+    int[] newArray = new int[size];
+    newArray[0] = num1;
+    newArray[1] = num2;
+    
+ for(int i = 2; i < size; i++)
+    newArray[i] = newArray[i - 1]+newArray[i - 2];
+ return  newArray;   
+} 
+int[] array = Fibonache(n, a, b);
+ShowArray(array);
+void ShowArray(int[] array) 
+{
+  foreach (var item in array)
+    Console.Write(item + " ");
+  Console.WriteLine();
+}
 
 
 
@@ -1143,3 +1077,254 @@ Cube(num);
 
 
 */
+
+
+
+// Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
+
+
+
+// int Sqr (int num , int num2)
+// {
+//     int i = 1;
+//     int sqr = num;
+//         while (i < num2)
+//         {
+//         sqr = (sqr * num);
+        
+//         i++;
+//          }
+//     return sqr;
+// }
+
+
+// Console.Write("Введите число:");
+// int num = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите степень:");
+// int num2 = Convert.ToInt32(Console.ReadLine());
+// int sqr = Sqr(num , num2);
+
+// Console.WriteLine(sqr);
+
+
+
+
+
+
+
+
+
+
+// Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+
+
+
+// int SumNum (int num)
+// {
+//     int res = 0;
+//     int sum = 0;
+    
+//     while (num > 0)
+//     {
+//         sum = num % 10;
+//         res = res + sum;
+//         num = num / 10;
+//     }
+// return res;
+// }
+
+// Console.Write("Введите число:");
+// int num = Convert.ToInt32(Console.ReadLine());
+// int sum = SumNum(num);
+// Console.WriteLine(sum);
+
+
+
+
+
+
+
+
+
+// Задача 29: Напишите программу, которая задаёт массив из m элементов и выводит их на экран.
+
+
+
+
+
+// int[] CreateRandomArray(int size) 
+// {
+//   int[] array = new int[size];
+//   for (int i = 0; i < array.Length; i++)
+//     array[i] = new Random().Next(0, 1000 + 1);
+//   return array;
+// }
+// void ShowArray(int[] array) 
+// {
+//   foreach (var item in array)
+//     Console.Write(item + " ");
+//   Console.WriteLine();
+// }
+
+
+// Console.Write("Введите количество элементов(m)");
+// int size = Convert.ToInt32(Console.ReadLine());
+// int[] arr = CreateRandomArray(size);
+// ShowArray(arr);
+
+
+
+
+
+
+
+
+// Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
+
+
+
+// int[] CreateRandomArray(int size) 
+// {
+//   int[] array = new int[size];
+//   for (int i = 0; i < array.Length; i++)
+//     array[i] = new Random().Next(100, 999 + 1);
+//   return array;
+// }
+
+// int NumEven(int[] array) 
+// {
+//   int count = 0;
+//   for (int i = 0; i < array.Length; i++)
+//   {
+//     if(array[i] % 2==0) 
+//     {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+// void ShowArray(int[] array) 
+// {
+//   foreach (var item in array)
+//     Console.Write(item + " ");
+//   Console.WriteLine();
+// }
+
+
+
+// Console.Write("Введите количество элементов массива:");
+// int size = Convert.ToInt32(Console.ReadLine());
+// int[] array = CreateRandomArray(size);
+// ShowArray(array);
+// Console.WriteLine(NumEven(array));
+
+
+
+
+
+
+
+
+
+
+// Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
+
+
+
+
+
+// int[] CreateRandomArray(int size) 
+// {
+//   int[] array = new int[size];
+//   for (int i = 0; i < array.Length; i++)
+//     array[i] = new Random().Next(100, 999 + 1);
+//   return array;
+// }
+
+// int Sum(int[] array) 
+// {
+//   int sum = 0;
+//   for (int i = 1; i < array.Length; i = i +2)
+//   {
+//     sum = array[i] + sum;
+    
+//   }
+//   return sum;
+// }
+
+// void ShowArray(int[] array) 
+// {
+//   foreach (var item in array)
+//     Console.Write(item + " ");
+//   Console.WriteLine();
+// }
+
+
+
+// Console.Write("Введите количество элементов массива:");
+// int size = Convert.ToInt32(Console.ReadLine());
+// int[] array = CreateRandomArray(size);
+// ShowArray(array);
+// Console.WriteLine(Sum(array));
+
+
+
+
+
+// Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+
+
+
+// int[] CreateRandomArray(int size) 
+// {
+//   int[] array = new int[size];
+//   for (int i = 0; i < array.Length; i++)
+//     array[i] = new Random().Next(0, 999 + 1);
+//   return array;
+// }
+ 
+// void ShowArray(int[] array) 
+// {
+//   foreach (var item in array)
+//     Console.Write(item + " ");
+//   Console.WriteLine();
+// }
+
+// int Max (int[] array)
+// {
+// int max = 0;
+//     for (int i = 0; i < array.Length; i++)
+//     {
+        
+//         if (array[i] > max)
+//         max = array[i];
+        
+//     }
+    
+// return max;
+// }
+
+// int Min (int[] array)
+// {
+// int min = array[0];
+//     for (int i = 0; i < array.Length; i++)
+//     {
+        
+//          if (array[i] < min)
+//         min = array[i];
+       
+//     }
+    
+// return min;
+// }
+
+// Console.Write("Введите количество элементов массива:");
+// int size = Convert.ToInt32(Console.ReadLine());
+// int[] array = CreateRandomArray(size);
+// ShowArray(array);
+// Console.WriteLine("Разница = " + (Max(array) - Min(array)));
+// Console.WriteLine("minValue: " + Min(array));
+// Console.WriteLine("maxValue: " + Max(array));
+
+
