@@ -1,4 +1,90 @@
-﻿
+﻿//homework
+
+
+
+
+
+//Задача 41: Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.
+
+
+// int[] CreateRandomArray() 
+// {
+// Console.Write("Input a num: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input a num1: ");
+// int num1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input a num2: ");
+// int num2 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input a num3: ");
+// int num3 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input a num4: ");
+// int num4 = Convert.ToInt32(Console.ReadLine());
+//   int[] array = new int[5];
+//   for (int i = 0; i < 5; i++)
+//     array[i] = num;
+//     array[1] = num1;
+//     array[2] = num2;
+//     array[3] = num3;
+//     array[4] = num4;
+//   return array;
+// }
+// void ShowArray(int[] array) 
+// {
+//   foreach (var item in array)
+//     Console.Write(item + " ");
+//   Console.WriteLine();
+// }
+
+
+
+// int[] arr = CreateRandomArray();
+// ShowArray(arr);
+
+
+
+// int PolNum(int[] arr)
+// {
+//     int count = 0;
+//     for(int i = 0; i < arr.Length; i++)
+//         if(arr[i] > 0)
+//         {
+        
+//         count ++;
+//         }
+// return count;
+// }
+
+// Console.WriteLine("Положительных чисел введено: " + PolNum(arr));
+
+
+
+
+
+
+
+
+//Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
+
+//b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
+
+
+// Console.Write("Введите b1: ");
+// double b1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите k1: ");
+// double k1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите b2: ");
+// double b2 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите k2: ");
+// double k2 = Convert.ToInt32(Console.ReadLine());
+// double x = ((b1-b2)/(-(k1-k2)));
+// double y = (k1 * x + b1);
+// double y2 = (k2 * x + b2);
+// Console.Write("Координаты точек пересечения "+ y);
+// Console.Write(" "+ y2);
+
+
+
+
 
 
 
@@ -178,31 +264,31 @@
 //Не используя рекурсию, выведите первые N чисел Фибоначчи. Первые два числа Фибоначчи: a и b.
 //числовая последовательность по принципу каждый новый элемент = суммы двух предыдущих
 
-Console.Write("Input a N: ");
-int n = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input number a : ");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input number b: ");
-int b = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input a N: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input number a : ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input number b: ");
+// int b = Convert.ToInt32(Console.ReadLine());
 
-int[] Fibonache(int size , int num1, int num2)
-{
-    int[] newArray = new int[size];
-    newArray[0] = num1;
-    newArray[1] = num2;
+// int[] Fibonache(int size , int num1, int num2)
+// {
+//     int[] newArray = new int[size];
+//     newArray[0] = num1;
+//     newArray[1] = num2;
     
- for(int i = 2; i < size; i++)
-    newArray[i] = newArray[i - 1]+newArray[i - 2];
- return  newArray;   
-} 
-int[] array = Fibonache(n, a, b);
-ShowArray(array);
-void ShowArray(int[] array) 
-{
-  foreach (var item in array)
-    Console.Write(item + " ");
-  Console.WriteLine();
-}
+//  for(int i = 2; i < size; i++)
+//     newArray[i] = newArray[i - 1]+newArray[i - 2];
+//  return  newArray;   
+// } 
+// int[] array = Fibonache(n, a, b);
+// ShowArray(array);
+// void ShowArray(int[] array) 
+// {
+//   foreach (var item in array)
+//     Console.Write(item + " ");
+//   Console.WriteLine();
+// }
 
 
 
